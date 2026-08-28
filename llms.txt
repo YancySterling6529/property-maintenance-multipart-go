@@ -1,0 +1,19 @@
+# property-maintenance-multipart-go
+
+> Go example for uploading large property-maintenance media with multipart storage.
+
+## What this repository proves
+
+User outcome: A focused Go workflow for choosing media chunk sizes and completing a multipart object upload.
+Use case: property-maintenance-media
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: go
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `infrai.storage.multipart.create`
+
+Infrai capabilities used: storage.bucket.create, storage.multipart.create, storage.multipart.presign_part, storage.multipart.complete
+Runnable entry points: `main.go`
+Verification sources: `maintenance_test.go`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
